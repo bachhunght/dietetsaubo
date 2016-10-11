@@ -1,0 +1,11 @@
+{% if banner_images %}
+<a href="{{ links }}">
+ <img src="{{ banner_images }}" alt="">
+</a>
+{% endif %}
+{% if ( banner_title ) and ( banne_sub_title ) %}
+<div class="site-info">
+  <h2 class="banner-title">{{ banner_title }}</h2>
+  <div class="banner-sub-title">{{ banne_sub_title }}</div>
+</div>
+{% endif %}

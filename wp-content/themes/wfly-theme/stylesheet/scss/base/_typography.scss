@@ -1,0 +1,77 @@
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+  margin: 0;
+  outline: none !important;
+  padding: 0;
+}
+
+html {
+  background-color: $white;
+  color: $gray-33;
+  // font-family: 'sans-serif';
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: $base-font-size;
+}
+
+body {
+  @include helveticaneue;
+  color: $color-text;
+  font-size: rem(16px);
+}
+
+a {
+  color: $gray-33;
+  text-decoration: underline;
+
+  &:hover,
+  &:active {
+    color: $color-link;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: rem(12px);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin-left: 1.2em;
+}
+
+input[type*='submit'] {
+  @extend %btn;
+}
+
+input[type*='text'],
+input[type*='email'],
+textarea {
+  border: rem(1px) solid $color-border;
+  padding: rem(4px 10px);
+  outline: none !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-link;
+  }
+}
+
+textarea {
+  max-width: 100%;
+  width: 100%;
+}
+.header-wrapper {
+  position: relative;
+}
+.page-title h1 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}

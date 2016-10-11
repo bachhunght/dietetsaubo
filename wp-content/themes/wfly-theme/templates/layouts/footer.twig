@@ -1,0 +1,10 @@
+{% block footer %}
+  <footer id="footer" class="footer footer-wrapper">
+    <div class="container">
+     {% include 'footer-menu.twig' %}
+      <div class="footer-inner">
+        {{acfwidget('copy_right_footer', 'footer_widget-3')}}
+      </div>
+    </div>
+  </footer>
+{% endblock %}

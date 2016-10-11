@@ -1,0 +1,16 @@
+.sidebar-right {
+  @include breakpoint(desktop) {
+    float: right;
+    padding-left: rem(15px);
+    width: 25%;
+  }
+}
+
+.box-quick-links {
+  .box-quick-link-item {
+    margin-bottom: 27px;
+  }
+}
+.box-service {
+  margin-bottom: 40px;
+}

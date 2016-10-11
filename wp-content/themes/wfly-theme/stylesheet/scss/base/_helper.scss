@@ -1,0 +1,36 @@
+%hidden,
+.hidden {
+  height: 0;
+  text-indent: rem(-99999px);
+  visibility: hidden;
+}
+
+%clearfix,
+.clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+}
+
+
+main h2, .heightline-title {
+  font-size: 100%;
+  color: $gray-66;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-top: 5px;
+  padding-right: 80px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: $color-link;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: $color-link;
+}

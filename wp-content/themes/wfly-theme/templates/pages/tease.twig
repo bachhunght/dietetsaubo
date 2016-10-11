@@ -1,0 +1,27 @@
+{% block content %}
+   {% if post.title and (title_option != "on") %}
+    <div id="page-title" class="page-title">
+      <h1>{{ post.title }}</h1>
+    </div>
+      {% endif %}
+  {% if post.thumbnail.src %}
+  <div class="post-picture">
+    <img src="{{post.thumbnail.src}}" class="feature" />
+  </div>
+  {% endif %}
+
+  <div class="post-content">
+    {{ post.content }}
+  </div>
+
+  {% if post.terms('tags') %}
+  <div class="tags">
+    <label>Tags:</label>
+    <ul class="tag-list">
+    {% for term in post.terms('tags') %}
+      <li><a href="{{term.link}}">{{term.name}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{% endblock %}

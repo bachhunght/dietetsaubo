@@ -1,0 +1,79 @@
+#page-title {
+  @extend %title;
+  font-size: rem(40px);
+  margin-bottom: rem(10px);
+}
+
+main {
+  padding-bottom: rem(20px);
+}
+
+.block-title {
+  @extend %title;
+  margin-bottom: rem(10px);
+}
+
+.cat_list {
+  margin: 0 0 30px 0;
+
+  .cat_list_item {
+    list-style: none;
+    margin-bottom: 40px;
+
+    .date-times {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.post_list {
+  margin: 0;
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+  }
+}
+
+
+.clothes-listing {
+  margin: 0 0 40px 0;
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+
+    .date, .category {
+      width: 15%;
+    }
+
+    .date {
+      font-weight: bold;
+    }
+
+    .category {
+      text-align: center;
+      background: #208042;
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+      }
+
+      &:hover {
+        background: #EB9800;
+      }
+    }
+    .post-title {
+      width: 70%;
+      padding-left: 10px;
+    }
+  }
+}

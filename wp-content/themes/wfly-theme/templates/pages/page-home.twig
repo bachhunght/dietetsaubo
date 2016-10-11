@@ -1,0 +1,15 @@
+
+{% extends 'layout.twig' %}
+{% block content %}
+    {% if post.title and (title_option != "on") %}
+    <div id="page-title" class="page-title">
+      <h1>{{ post.title }}</h1>
+    </div>
+  {% endif %}
+ {{ shortcode('[custom_shortcode]') }}
+ <div class="ok">
+  <h2 class="block-title"> tin tuc moi nhat</h2>
+ {{ shortcode('[polygon_simple_recent_posts num_posts="8"]') }}
+ </div>
+{% endblock %}
+
